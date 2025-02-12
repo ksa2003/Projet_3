@@ -1,0 +1,154 @@
+/* Variables globales */
+:root {
+    --primary-color: #00cc66;
+    --secondary-color: #2d3436;
+    --background-color: #f8f9fa;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style général de la page */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+/* En-tête et titre */
+.stTitle {
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    color: var(--secondary-color) !important;
+    margin-bottom: 2rem !important;
+}
+
+.stSubheader {
+    font-size: 1.5rem !important;
+    color: var(--secondary-color) !important;
+    opacity: 0.9;
+}
+
+/* Barre de recherche */
+.stTextInput input {
+    border-radius: 50px !important;
+    border: 1px solid #e0e0e0 !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1rem !important;
+    transition: all 0.3s ease;
+}
+
+.stTextInput input:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 2px rgba(0, 204, 102, 0.2) !important;
+}
+
+/* Style des cartes de restaurants */
+.markdown-text-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease;
+}
+
+.markdown-text-container:hover {
+    transform: translateY(-2px);
+}
+
+/* Images des restaurants */
+.stImage {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.stImage img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+/* Boutons */
+.stButton button {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-radius: 50px !important;
+    padding: 0.5rem 1.5rem !important;
+    font-weight: 600 !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    background-color: #00b359 !important;
+    transform: translateY(-1px);
+}
+
+/* Bouton de déconnexion */
+#logout_button {
+    background-color: #ff4d4d !important;
+}
+
+#logout_button:hover {
+    background-color: #ff3333 !important;
+}
+
+/* Alignement des informations à gauche */
+.markdown-text-container {
+    text-align: left; /* Alignement du texte */
+    padding-left: 20px; /* Ajout d'une marge à gauche */
+    margin-left: 0 !important; /* Supprimer les marges inutiles */
+}
+
+/* Ajustement des images */
+.stImage img {
+    object-fit: cover;
+    width: 100%;
+    height: auto; /* Ajuste automatiquement la hauteur */
+    max-height: 150px; /* Fixe une hauteur maximale pour uniformiser */
+}
+
+/* Réduction de l'espace entre les colonnes */
+.stImage, .stImage img {
+    margin-right: 15px; /* Réduire l'espace après l'image */
+}
+
+
+
+/* Couleur de fond de la sidebar */
+.css-1d391kg {
+    background-color: #2c2f33; /* Fond sombre */
+    border-right: 2px solid #3f4448; /* Bordure droite */
+    color: #ffffff; /* Texte en blanc */
+}
+
+/* Style des boutons de la sidebar */
+.css-1d391kg button {
+    background-color: #3ba55d; /* Fond vert */
+    color: #ffffff; /* Texte en blanc */
+    border-radius: 12px; /* Coins arrondis */
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px; /* Espacement entre les boutons */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left; /* Alignement du texte */
+}
+
+/* Survol des boutons */
+.css-1d391kg button:hover {
+    background-color: #2ea44f; /* Vert plus foncé au survol */
+    color: #ffffff; /* Conserver le texte en blanc */
+}
+
+/* Titres dans la sidebar */
+.css-1d391kg h1, .css-1d391kg h2, .css-1d391kg h3 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Espacement autour des éléments */
+.css-1d391kg > div {
+    padding: 20px;
+}
+
